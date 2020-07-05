@@ -20,6 +20,7 @@ namespace WebApplication3.Controllers
         {
            
             string connstring = "Server=localhost; database=testdb; UID=root; password=hema";
+
             using (var con = new MySqlConnection(connstring))
             {
                 string cm = String.Format("Select * from furniture_login where username='{0}' and password='{1}';", username, password);
